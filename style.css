@@ -1,0 +1,278 @@
+/* IMOPRTATION FONT FROM GOOGLE FONT LIBRARY */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* END */
+
+/* DEFAULT INSTALLATION */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    transition: .3s ease all;
+}
+/* COLORS ROOT */
+:root{
+    --dark-cyan: #00494d;
+    --grayish-cyan: #5e7a7d;
+    --strong-cyan: #26c0ab;
+    --dark-grayish: #7f9c9f;
+    --light-grayish: #c5e4e7;
+    --very-light-graish: #f4fafa;
+}
+
+/* CSS 3 CODE STARTING */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    background-color: var(--light-grayish);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: var(--grayish-cyan);
+    letter-spacing: 10px;
+}
+
+.app-container{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 30px;
+}
+
+.app-container h4 {
+    color: #5e7a7d;
+    margin-bottom: 10px;
+}
+
+.app-container h4:nth-child(3){
+    margin-top: 30px;
+}
+.app-container h4:nth-child(5){
+    margin-top: 30px;
+}
+
+.user-side{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.imoprtations{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: var(--very-light-graish);
+    border-radius: 10px;
+    color: var(--grayish-cyan);
+    position: relative;
+
+}
+
+
+.imoprtations input{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border: none;
+    direction: rtl;
+    font-size: 24px;
+    color: var(--dark-cyan);
+    font-weight: 700;
+    border-radius: 7px;
+    padding-right: 30px;
+}
+
+.imoprtations i {
+    position: absolute;
+    font-size: 24px;
+    color: var(--dark-grayish);
+    margin-left: 10px;
+}
+input:focus{
+    outline: #26c0ab 2px solid;
+    transition: 0s;
+}
+
+.tips{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.tips input {
+    width: 100px;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    color: var(--dark-cyan);
+    background-color: var(--very-light-graish);
+}
+.tips button {
+    font-size: 24px;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+}
+.tips button:hover {
+    background-color: var(--light-grayish);
+    color: var(--dark-cyan);
+}
+.tips button.true{
+    background-color: var(--strong-cyan);
+    color: #00494d;
+}
+
+.resualts{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    background-color: var(--dark-cyan);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.resualts .split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fonts h5 {
+    font-weight: 700;
+    color: #f4fafa;
+}
+.fonts p {
+    color: var(--dark-grayish);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.result {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--strong-cyan);
+}
+.resualts button{
+    bottom: 0;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    color: var(--dark-cyan);
+    background: var(--strong-cyan);
+    margin: auto;
+    margin-bottom: 0;
+    width: 100%;
+}
+.resualts button:hover{
+    background: var(--light-grayish);
+}
+.division {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+.wrong {
+    display: none;
+}
+.error {
+    display: flex;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5%;
+    font-size: 16px;
+}
+
+@media (max-width: 990px){
+    .app-container {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 785px){
+    .app-container {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 650px){
+    .app-container{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .resualts {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .tips{
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: 100%;
+    }
+    .tips button {
+        margin: auto;
+    }
+    .tips input {
+        margin: auto;
+        padding: 10px;
+    }
+    .title {
+        transform: translateY(100px);
+    }
+    .attribution{
+        position: relative;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 475px){
+    .title {
+        transform: translateY(0);
+        margin-top: 30px;
+    }
+    .app-container{
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        padding-bottom: 100px;
+        border-radius: 25px 25px 0 0;
+        margin-bottom: 0;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 5%;
+        padding: 0;
+        margin-bottom: 0;
+        transform: translateY(370px);
+    }
+
+}
+@media (max-width: 390px){
+    .result{
+        font-size: 32px;
+    }
+}
