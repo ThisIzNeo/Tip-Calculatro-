@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- LINK CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+  <!-- LINK BOXICONS LIBRARY FOR USING ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h5 class="title">SPLI<br>TTER</h5>
+
+  <!-- APP COMPONENTS -->
+  <div class="app-container">
+    <div class="user-side">
+      <h4>Bill</h4>
+      <div class="bill-price imoprtations">
+        <i class='bx bx-dollar'></i>
+        <input type="number" id="bill-input" inputmode="numeric" name="bill-input" >
+      </div>
+      <h4>Select Tip %</h4>
+      <div class="tips" id="tipsValues">
+        <button class="btn colored" id="tipValue">5%</button>
+        <button class="btn colored" id="tipValue">10%</button>
+        <button class="btn colored true" id="tipValue">15%</button>
+        <button class="btn colored" id="tipValue">25%</button>
+        <button class="btn colored" id="tipValue">50%</button>
+        <input class="btn" type="text" inputmode="numeric" name="custom" placeholder="Custom" id="customTip">
+      </div>
+      <div class="division">
+        <h4>Number of People</h4>
+        <p class="wrong" style="font-weight: 500; color: red; ">can't be zero</p>
+      </div>
+      <div class="persons imoprtations">
+        <i class='bx bxs-user'></i>
+        <input type="text" id="persons-input" inputmode="numeric" name="persons">
+      </div>
+    </div>
+    <div class="resualts" id="resualts">
+      <div class="split">
+        <div class="fonts">
+          <h5>Tip Amount</h5>
+          <p>/ person</p>
+        </div>
+        <div class="result" id="tip-amount"></div>
+      </div>
+      <div class="split">
+        <div class="fonts">
+          <h5>Total</h5>
+          <p>/ person</p>
+        </div>
+        <div class="result" id="Total-resault"></div>
+      </div>
+      <button class="Reset">RESET</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ThisIzNeo">Neo</a>.
+  </div>
+
+  <!-- JS SCRIPT -> APP.JS -->
+   <script src="app.js"></script>
+</body>
+</html>
