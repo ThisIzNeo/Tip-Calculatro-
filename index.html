@@ -27,16 +27,16 @@
       <h4>Bill</h4>
       <div class="bill-price imoprtations">
         <i class='bx bx-dollar'></i>
-        <input type="text" inputmode="numeric">
+        <input type="number" id="bill-input" inputmode="numeric" name="bill-input" >
       </div>
       <h4>Select Tip %</h4>
-      <div class="tips">
-        <button class="btn colored">5%</button>
-        <button class="btn colored">10%</button>
-        <button class="btn colored true">15%</button>
-        <button class="btn colored">25%</button>
-        <button class="btn colored">50%</button>
-        <input class="btn" type="text" inputmode="numeric" name="custom" placeholder="Custom" id="">
+      <div class="tips" id="tipsValues">
+        <button class="btn colored" id="tipValue">5%</button>
+        <button class="btn colored" id="tipValue">10%</button>
+        <button class="btn colored true" id="tipValue">15%</button>
+        <button class="btn colored" id="tipValue">25%</button>
+        <button class="btn colored" id="tipValue">50%</button>
+        <input class="btn" type="text" inputmode="numeric" name="custom" placeholder="Custom" id="customTip">
       </div>
       <div class="division">
         <h4>Number of People</h4>
@@ -44,31 +44,34 @@
       </div>
       <div class="persons imoprtations">
         <i class='bx bxs-user'></i>
-        <input type="text" inputmode="numeric">
+        <input type="text" id="persons-input" inputmode="numeric" name="persons">
       </div>
     </div>
-    <div class="resualts">
+    <div class="resualts" id="resualts">
       <div class="split">
         <div class="fonts">
           <h5>Tip Amount</h5>
           <p>/ person</p>
         </div>
-        <div class="result">$4.27</div>
+        <div class="result" id="tip-amount"></div>
       </div>
       <div class="split">
         <div class="fonts">
           <h5>Total</h5>
           <p>/ person</p>
         </div>
-        <div class="result">$32.87</div>
+        <div class="result" id="Total-resault"></div>
       </div>
-      <button>RESET</button>
+      <button class="Reset">RESET</button>
     </div>
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/ThisIzNeo">Neo</a>.
   </div>
+
+  <!-- JS SCRIPT -> APP.JS -->
+   <script src="app.js"></script>
 </body>
 </html>
